@@ -1,0 +1,71 @@
+\usepackage[utf8]{inputenc}  % Text encoding
+\usepackage{graphicx}       % Image management
+\usepackage[
+    top=2cm, bottom=2.5cm, left=3cm, right=2cm]{geometry}
+\usepackage[
+backend=biber,
+style=apa,
+sorting=apa
+]{biblatex}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{cleveref}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{ragged2e}
+
+\addbibresource{ref.bib}
+%\title{
+%  \includegraphics[width=0.4\textwidth]{Images/logo-hd.png} \\
+%Coating of Liposomes with Thiolated Chitosan For the Delivery of Leuprolin}
+
+\newcommand{\AUTHORNAME}{Author name}
+\newcommand{\REPORTTITLE}{Title}
+\newcommand{\LOCATION}{Location}
+\newcommand{\SUPERVISOR}{Supervisor}
+\newcommand{\INTERNSHIPDURATION}{placeholder}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\nouppercase{\leftmark}}
+\fancyhead[R]{\thepage}
+
+\hypersetup{
+    colorlinks=true,
+    citecolor=blue,      % Color of citation links
+    linkcolor=blue,      % Color of internal links (figures, tables)
+    urlcolor=blue        % Color of URL links
+}
+
+
+\captionsetup{
+    labelfont=bf,
+    textfont={small, it}
+}
+
+\newcommand{\ChitosanPurificationFigure}{}
+
+\newcommand{\Table}{%
+  \begin{table}[ht]
+    \centering
+    \small
+    \caption{ExampleTable}
+    \label{tab:ExampleTable}
+    \setlength{\extrarowheight}{0.1cm}
+    \begin{tabular}{c l c c c}
+      \toprule
+      column1 & colums2 & column3 & column3 \\
+      \midrule
+      r1 & r2 & r3 & r4 & r5      \\
+      \bottomrule
+    \end{tabular}
+  \end{table}%
+}
